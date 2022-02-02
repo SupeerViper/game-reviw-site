@@ -1,0 +1,107 @@
+body {
+    background-image: url("image/background4.1.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.grid1 {
+    --auto-grid-min-size: 24rem;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 1.8rem;
+    margin: 20px;
+}
+.element1 {
+    padding: 5rem 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    background: #eb4d4b;
+    color: #ffffff;
+}
+.custom-item {
+    background: linear-gradient(120deg, #1b4332, #009272, #95d5b2, #009272, #1b4332);
+    border-radius: 1rem;
+    padding: 0.5em;
+    text-align: center;
+    /* filter: blur(3px); */
+    height: 22em;
+    border: 4px solid rgb(34, 34, 34);
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+.custom-image {
+    border-radius: 1rem;
+    position: relative;
+    height: 60%;
+    width: 106%;
+    top: -0.6em;
+    left: -0.7em;
+    border: 3px solid rgb(34, 34, 34);
+    margin: 0px;
+}
+.titlu {
+    margin: 0px;
+    font-size: 1.3em;
+    color: white;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+.description {
+    margin: 0px;
+    font-size: 1.1em;
+    color: white;
+    margin: 0px 0px 5px 0px;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+.sign {
+    font-size: 1.2em;
+    color: white;
+    margin: 0px 8px 0px 8px;
+}
+.custom-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    align-content: center;
+}
+.button1 {
+    margin: 0px 8px 0px 8px;
+}
+
+.custom-item:before, .custom-item:after {
+	content: '';
+	position: absolute;
+    border-radius: 1rem;
+	left: -1px;
+	top: -1px;
+	background: linear-gradient(45deg, #b5e48c, #99d98c, #76c893,#52b69a, #34a0a4, #168aad, #1a759f);
+	background-size: 400%;
+	width: 101%;
+	height: 101%;
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.custom-item:after {
+	filter: blur(20px);
+}

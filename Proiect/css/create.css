@@ -1,0 +1,77 @@
+body {
+    background-image: url("image/background4.1.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.formular {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    margin: 9em 0em 9em 0em;
+}
+.custom-form {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    background-color: rgb(33, 37, 41);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.2em 2em 1.2em 2em;
+    align-content: center;
+    justify-content: space-between;
+}
+.h1 {
+    color: white;
+    margin: 0px;
+    text-align: center;
+    font-size: 2.7em;
+}
+.input {
+    font-size: 1.2em;
+}
+.label-input {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.custom-button {
+    margin: 4px 0px 0px 0px;
+}
+.custom-p-game-success {
+    border: 2px solid rgb(89, 255, 47);
+    font-size: 1.2em;
+    padding: 2px;
+    max-width: auto;
+    background-color: rgba(77, 255, 7, 0.3);
+    text-align: center;
+    display: none;
+}
+.custom-p-game-error {
+    border: 2px solid rgb(250, 22, 22);
+    font-size: 1.2em;
+    padding: 2px;
+    max-width: auto;
+    background-color: rgba(250, 15, 15, 0.3);
+    text-align: center;
+    display: none;
+}
+.review1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.label-input-star {
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+}
+.review2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 3px;
+}

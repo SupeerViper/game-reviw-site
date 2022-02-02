@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faq</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/header1.css">
+    <link rel="stylesheet" href="../css/faq.css">
+</head>
+<body>
+
+    <div id="loading-screen">
+        <div class="lds-dual-ring"></div>
+        <p id="loading-text">LOADING</p>
+    </div>
+    
+    <div class="container-fluid custom1">
+        <header class="p-3 bg-dark text-white">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="#" class="d-flex align-items-center mb-2 me-2 mb-lg-0 text-white text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><img src="../css/image/gc.png" alt="image" width="40" height="40" class="rounded"></svg>
+                </a>
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="homepage.html" class="nav-link fs-4 px-2 text-white">Home</a></li>
+                  <li><a href="list.html" class="nav-link fs-4 px-2 text-white list-button">List</a></li>
+                  <li><a href="faq.html" class="nav-link fs-4 px-2 text-white">FAQs</a></li>
+                  <li><a href="about.html" class="nav-link fs-4 px-2 text-white">About</a></li>
+                </ul>
+        
+                <div class="text-end d-flex">
+                    <div class="btn-group show-user-name">
+                        <button type="button" class="btn fs-4 btn-outline-light me-2 dropdown-toggle custom-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                          User12345
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                          <li><a type="submit" class="dropdown-item logout-button" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                    <form action="login.html">
+                        <input type="submit" class="btn fs-4 btn-outline-light me-2 login-button" value="Login"/>
+                    </form>
+                    <form action="register.html">
+                        <input type="submit" class="btn fs-4 btn-danger inregistrare" value="Înregistrare"/>
+                    </form>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="container custom2 rounded">
+        <h1>Întrebări</h1>
+        <details>
+            <summary class="fs-4">Care este scopul acestui site?</summary>
+            <p class="fs-5">Site-ul acesta a fost creat pentru a împărți părerile, recomandările și în general informațiile despre un anumit joc pentru a lăsa utilizatorul să își dea seama ce joc este potrivit pentru el.</p>
+        </details>
+        <details>
+            <summary class="fs-4">Ce jocuri sunt oferite pe acest site?</summary>
+            <p class="fs-5">Stie-ul deocamdată este la început dar încercăm să adăugăm cât mai multe jocuri din orice genere cu ajutorul utilizatorilor noștri.</p>
+        </details>
+        <details>
+            <summary class="fs-4">Dacă nu există jocul "x" ?</summary>
+            <p class="fs-5">Jocurile pot fi adăugate de admini site-ului sau chiar și de utilizatori, astfel dacă un joc nu este deja adăugat îl puteți adaugă chiar dumneavoastră.</p>
+        </details>
+        <details>
+            <summary class="fs-4">De ce nu văd lista?</summary>
+            <p class="fs-5">Lista va putea fi observată după înregistrarea și logarea pe site.</p>
+        </details>
+        <details>
+            <summary class="fs-4">Cum pot adăuga jocuri?</summary>
+            <p class="fs-5">După logarea pe site vă puteți duce la pagină de list, iar de acolo butonul de create va apărea în dreapta sus a ecranului lângă numele dumneavoastră. PS: Jocurile trebuie să conțina un titlu, o imagine și două descrieri una mai scurtă de maxim 80 caractere, iar cealaltă mai lungă arătând mai multe detalii de 600-800 caractere.</p>
+        </details>
+        <details>
+            <summary class="fs-4">Cum funcționează partea de review-uri?</summary>
+            <p class="fs-5">Pentru fiecare joc în parte se pot lăsa review-uri care să conțină textul review-ului, acesta fiind între 240-400 de caractere, numele dumneavoastră și nu in ultimul rând notă pentru acel joc de la 1 la 5. Pentru a lasă un review apăsați pe butonul "Adăugați review" de pe pagina oricărui joc.</p>
+        </details>
+        <p class="fs-4 mb-1">Pentru a ajunge înapoi la home apăsați aici: <a href="homepage.html" class="btn fs-7 rounded-pill btn-outline-light me-2" >Home</a></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/models/user.js"></script>
+    <script src="../js/models/game.js"></script>
+    <script src="../js/http-api.js"></script>
+    <script src="../js/index.js"></script>
+
+    <script>
+
+        $(document).ready(function() {
+            localStorageLogIn();
+            getUser();
+            loadingScreen();
+        });
+
+    </script>
+
+</body>
+</html>

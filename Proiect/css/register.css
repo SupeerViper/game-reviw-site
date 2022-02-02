@@ -1,0 +1,32 @@
+body {
+    background-image: url("image/background2.1.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.custom2 {
+    background-color: rgb(33, 37, 41);
+
+    max-width: 40%;
+    max-height: 40%;
+
+    padding: 1%;
+    margin-top: 15%;
+
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.6);
+}
+.custom3 {
+    padding: 0.5%;
+}
+.custom4 {
+    margin-top: 3%;
+}
+.custom-p-register {
+    border: 2px solid rgb(89, 255, 47);
+    font-size: 1.2em;
+    padding: 2px;
+    max-width: auto;
+    background-color: rgba(77, 255, 7, 0.3);
+    text-align: center;
+    display: none;
+}

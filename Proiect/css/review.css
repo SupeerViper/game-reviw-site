@@ -1,0 +1,73 @@
+body {
+    background-image: url("image/BackgroundRog1.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+.review-container {
+    width: 18%;
+    max-height: 50%;
+    margin: 18em auto 14em;
+    color: white;
+    background-color: rgb(33, 37, 41);
+    border-radius: 1rem;
+    border: 3px solid black;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.6);
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label-input {
+    font-size: 1.2em;
+    margin-bottom: 0.2em;
+}
+
+.star {
+    margin-bottom: 0.2em;
+}
+
+.input {
+    margin-bottom: 0.2em;
+    width: 90%;
+    border-radius: 0.5rem;
+}
+
+.review-text {
+    margin-bottom: 0.4em;
+    border-radius: 0.5rem;
+}
+
+.custom-button {
+    margin-bottom: 0.4em;
+}
+
+.custom-p-review-success {
+    border: 2px solid rgb(89, 255, 47);
+    font-size: 1.2em;
+    padding: 2px;
+    max-width: auto;
+    background-color: rgba(77, 255, 7, 0.3);
+    text-align: center;
+    display: none;
+}
+
+.custom-p-review-error {
+    border: 2px solid rgb(250, 22, 22);
+    font-size: 1.2em;
+    padding: 2px;
+    max-width: auto;
+    background-color: rgba(250, 15, 15, 0.3);
+    text-align: center;
+    display: none;
+}

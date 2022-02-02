@@ -1,0 +1,92 @@
+body {
+    background-image: url("image/background5.1.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+.profile {
+    background-color: rgb(33, 37, 41);
+    margin: 20em auto 20em;
+    width: 20%;
+    max-height: 50%;
+    border-radius: 2rem;
+    border: 4px solid rgba(0, 0, 0, 0.466);
+    padding: 0.5em;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.6);
+}
+
+.items{
+    color: white;
+    border-radius: 2rem;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.user-name{
+    text-align: center;
+    margin-top: 0.1em;
+}
+
+.custom-p-user-description{
+    border: 2px solid white;
+    font-size: 1.2em;
+    border-radius: 2rem;
+    padding: 0.5em;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.6);
+}
+
+.p-badge {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.custom-vip{
+    border: 2px solid lime;
+    font-size: 1.1em;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.6);
+}
+
+.custom-admin{
+    border: 2px solid rgb(245, 23, 23);
+    font-size: 1.1em;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.6);
+}
+
+.custom-badge-user{
+    border: 2px solid rgb(23, 245, 245);
+    font-size: 1.1em;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.6);
+}
+
+.badges{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0px 4px 0px 4px;
+    margin-bottom: 1em;
+    margin-bottom: 1.8em;
+}
+
+.back-to{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0.1em 0.8em 0.1em 0.8em;
+    margin-bottom: 0.5em;
+}
+
+.custom-p-back{
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 1300px) {
+    .profile{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .profile{
+        width: 80%;
+    }
+}
